@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VÉLARE — Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0e0e0e;
+      color: #d4af37;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #ffffff;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-transform: uppercase;
+      animation: fadeSlideUp 2s ease forwards;
+      animation-delay: 1s;
+      opacity: 0;
+    }
+
+    .underline {
+      width: 80px;
+      height: 2px;
+      background-color: #d4af37;
+      margin: 20px 0;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 2s;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: normal;
+      color: #999;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeSlideUp 2s ease forwards;
+      animation-delay: 2.5s;
+    }
+
+    @keyframes fadeSlideUp {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .logo {
+        font-size: 3em;
+      }
+
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">VÉLARE</div>
+  <h1>Coming Soon</h1>
+  <div class="underline"></div>
+  <h2>Luxury Beyond Expectations</h2>
+</body>
+</html>
